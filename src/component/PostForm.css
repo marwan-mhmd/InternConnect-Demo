@@ -1,0 +1,135 @@
+.post-form-container {
+    background-color: #e7e8e9; 
+    border-radius: 0.75rem;
+    padding: 2rem;
+    position: sticky;
+    top: 6rem; 
+}
+
+.form-header {
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: #0f172a;
+    letter-spacing: -0.05em;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header-icon {
+    color: var(--primary-color, #0b5fff);
+    font-size: 1.5rem;
+}
+
+.form-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: #4a5568; 
+    margin-bottom: 0.5rem;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #c1c6d5; 
+    font-size: 0.875rem;
+    padding: 0.5rem 0;
+    color: #0f172a;
+    outline: none;
+    transition: border-color 0.3s ease;
+    font-family: inherit;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-bottom-color: var(--primary-color, #0b5fff);
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+    color: #94a3b8;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.skill-badge {
+    background-color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.625rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    border: 1px solid #c1c6d5;
+    color: #0f172a;
+}
+
+.remove-icon {
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: #4a5568;
+}
+
+.remove-icon:hover {
+    color: #ba1a1a; 
+}
+
+.add-skill-btn {
+    background-color: rgba(11, 95, 255, 0.1);
+    color: var(--primary-color, #0b5fff);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.625rem;
+    font-weight: 700;
+    border: 1px solid rgba(11, 95, 255, 0.2);
+    cursor: pointer;
+}
+
+.add-skill-btn:hover {
+    background-color: rgba(11, 95, 255, 0.2);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 50px;
+    background-color: var(--primary-color, #0b5fff);
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+}

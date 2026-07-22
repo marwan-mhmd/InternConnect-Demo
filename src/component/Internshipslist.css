@@ -1,0 +1,12 @@
+.internships-list {
+    background-color: var(--bg-main); 
+    padding-top: 5rem; 
+    padding-bottom: 5rem;
+}
+.view-all a {
+    transition: all 0.3s ease;
+}
+.view-all a:hover {
+    gap: 0.75rem !important; 
+    color: var(--primary-dark) !important;
+}

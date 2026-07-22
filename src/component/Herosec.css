@@ -1,0 +1,134 @@
+
+.herosec {
+    min-height: 100vh;
+    /* padding-top: 40px;  */
+    background-color:var(--bg-light); 
+}
+.arch-badge {
+    background-color: rgba(11, 95, 255, 0.1);
+    color: var(--primary-color);
+    padding: 0.3rem 1rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.arch-badge .dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    font-weight: 900;
+    color: var(--text-dark);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.5rem;
+}
+
+/* .highlight-italic {
+    color: var(--primary-color);
+    font-style: italic;
+} */
+
+.hero-desc {
+    font-size: 1.125rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    max-width: 90%;
+    margin-bottom: 2rem;
+}
+.filled-btn {
+    background: var(--primary-gradient) !important;
+    border: none !important;
+    padding: 0.8rem 2rem !important;
+    border-radius: 50px !important;
+    font-weight: 700 !important;
+    box-shadow: 0 10px 20px -5px rgba(11, 95, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+.filled-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 25px -5px rgba(11, 95, 255, 0.4);
+}
+.outline-btn {
+    background-color: white !important;
+    color: var(--primary-color) !important;
+    border: 1px solid rgba(11, 95, 255, 0.2) !important;
+    padding: 0.8rem 2rem !important;
+    border-radius: 50px !important;
+    font-weight: 700 !important;
+    transition: all 0.3s ease !important;
+}
+.outline-btn:hover {
+    background-color: rgba(11, 95, 255, 0.05) !important;
+    border-color: var(--primary-color) !important;
+}
+.heropic-placeholder {
+    width: 90%;
+    aspect-ratio: 1 / 1;
+    background-color: var(--border-light);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--border-light);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: auto;
+}
+/* ========================================= */
+/* تظبيط صورة اللوجو جوه الهيرو سكشن */
+/* ========================================= */
+
+/* تعديل بسيط على المربع المؤقت عشان يبقى شفاف لو اللوجو PNG */
+.heropic-placeholder {
+    background-color: transparent !important; /* شيلنا الخلفية الرمادي */
+    border: none; /* شيلنا أي حواف لو موجودة */
+}
+
+/* تظبيط الصورة نفسها */
+.heropic-placeholder img {
+    width: 100%;
+    height: 100%;
+    max-width: 500px; /* أقصى عرض عشان اللوجو ميكبرش أوي في الشاشات الكبيرة */
+    object-fit: contain; /* بتخلي الصورة تاخد حجمها الطبيعي جوه المربع من غير ما تتقص */
+    background-color: transparent !important;
+    /* أنيميشن الطفو (اختياري بس بيخلي الشكل تحفة) */
+    animation: floatImage 6s ease-in-out infinite;
+}
+
+/* تعريف حركة الأنيميشن (طالع نازل بهدوء) */
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* بيطلع لفوق 20 بيكسل */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@media (max-width: 991px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    .hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

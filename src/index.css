@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif; 
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, button, input, label, span {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+:root {
+    /* الألوان الأساسية (Primary & Secondary) */
+    --primary-color: #0b5fff;      /* الأزرق الأساسي بتاع الموقع */
+    --primary-dark: #004bbd;       /* الأزرق الغامق (للهوفر والجراديانت) */
+    --secondary-color: #00c2ff;    /* اللبني أو الأزرق الفاتح */
+
+    /* ألوان الخلفيات (Backgrounds) */
+    --bg-main: #ffffff;            /* الأبيض الأساسي */
+    --bg-light: #f3f7fc;           /* الرمادي الفاتح جداً (خلفية الهيرو والفوتر) */
+    --bg-alt: #f1f5f9;             /* رمادي أغمق سنة (للكروت أو زراير اللغة) */
+
+    /* ألوان النصوص (Text Colors) */
+    --text-dark: #0f172a;          /* كحلي غامق جداً يميل للأسود (للعناوين الكبيرة) */
+    --text-muted: #475569;         /* رمادي متوسط (للبراجرافات والنصوص العادية) */
+    --text-light: #94a3b8;         /* رمادي فاتح (للنصوص الثانوية زي الفوتر) */
+
+    /* ألوان الحدود والتفاصيل (Borders) */
+    --border-light: #e2e8f0;       /* لون الحدود الخفيفة (زي الفواصل) */
+
+    /* جراديانت جاهز للزراير */
+    --primary-gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+
+    --error: #ba1a1a;
+}

@@ -1,0 +1,118 @@
+.admin-page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+.page-header {
+  margin-bottom: 0.5rem;
+}
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.25rem;
+}
+.page-subtitle {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+.verifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+.verify-card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.verify-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.company-info h3 {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.25rem;
+}
+.date-text {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  font-weight: 600;
+}
+.doc-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #f8fafc;
+  color: #475569;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.view-doc-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #f1f5f9;
+  border: 1px dashed #cbd5e1;
+  color: #0f172a;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.view-doc-btn:hover {
+  background-color: #e2e8f0;
+  border-style: solid;
+}
+.verify-card-footer {
+  display: flex;
+  gap: 1rem;
+}
+.approve-action-btn,
+.reject-action-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  color: white;
+}
+.approve-action-btn {
+  background-color: #10b981;
+}
+.reject-action-btn {
+  background-color: #ef4444;
+}
+.approve-action-btn:hover,
+.reject-action-btn:hover {
+  opacity: 0.9;
+}
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #64748b;
+  padding: 3rem;
+  background-color: white;
+  border-radius: 1rem;
+  border: 1px dashed #cbd5e1;
+}

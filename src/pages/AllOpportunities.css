@@ -1,0 +1,120 @@
+.all-opportunities-page {
+    background-color: var(--bg-light); 
+    min-height: 100vh;
+}
+
+.main-content {
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+.title h1{
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+.badge-custom {
+    background-color: var(--bg-main); 
+    padding: 0.8rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);  
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    
+    white-space: nowrap; 
+}
+
+.badge-custom strong {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.filter-card {
+    background-color: var(--bg-main);
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    border: 1px solid var(--border-light);
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.02);
+}
+.form-control,.form-select{
+    background-color: var(--bg-light);
+}
+.filter-card label {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 800;
+    color: var(--text-light);
+    margin-bottom: 0.75rem;
+}
+
+.filter-card input,
+.filter-card select {
+    width: 100%;
+    border: none;
+    background-color: var(--bg-alt); 
+    padding: 0.8rem 1rem;
+    border-radius: 0.8rem;
+    color: var(--text-dark);
+    font-weight: 500;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.filter-card input:focus,
+.filter-card select:focus {
+    box-shadow: 0 0 0 2px rgba(11, 95, 255, 0.2); 
+}
+
+.input-with-icon .search-icon {
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+    color: var(--text-muted);
+    z-index: 10;
+    pointer-events: none; 
+}
+
+.input-with-icon input {
+    padding-left: 2.8rem !important; 
+}
+
+.pagination-container .pagination {
+    margin-bottom: 0;
+}
+
+.pagination-container .page-link {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-weight: 700;
+    border: none;
+    background-color: var(--bg-main);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(15, 23, 42, 0.05);
+}
+
+.pagination-container .page-link:hover {
+    background-color: var(--bg-alt);
+    color: var(--primary-color);
+    transform: translateY(-2px); 
+}
+
+.pagination-container .page-item.active .page-link {
+    background-color: var(--primary-color);
+    color: var(--bg-main);
+    box-shadow: 0 4px 15px rgba(11, 95, 255, 0.4) !important;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 991px) {
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 1.5rem;
+    }
+}

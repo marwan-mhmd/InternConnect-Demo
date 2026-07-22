@@ -1,0 +1,407 @@
+.admin-overview-container {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+/* ================= Top Grid ================= */
+.admin-grid-top {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .admin-grid-top {
+        grid-template-columns: 8fr 4fr;
+    }
+}
+
+/* ================= Chart Section ================= */
+.chart-section {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+}
+
+.chart-subtitle {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.25rem;
+}
+
+.chart-title {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #0f172a;
+    margin: 0;
+}
+
+.chart-highlight {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #00c2ff;
+    margin-left: 0.5rem;
+}
+
+.chart-legend {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--primary-color, #0b5fff);
+}
+
+.legend-line {
+    width: 40px;
+    height: 12px;
+    border-radius: 10px;
+    background-color: #00c2ff;
+}
+
+.chart-bars-container {
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.chart-bar {
+    flex: 1;
+    background-color: #f8fafc;
+    border-radius: 0.5rem 0.5rem 0 0;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.bar-fill {
+    width: 100%;
+    background-color: var(--primary-color, #0b5fff);
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.gradient-fill {
+    background: linear-gradient(to top, var(--primary-color, #0b5fff), #00c2ff);
+}
+
+.relative-bar {
+    position: relative;
+}
+
+.peak-tooltip {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0f172a;
+    color: white;
+    font-size: 0.65rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.chart-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-size: 0.65rem;
+    color: #94a3b8;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* ================= Stats Cards ================= */
+.stats-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.stat-card-blue {
+    background-color: var(--primary-color, #0b5fff);
+    color: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+}
+
+.stat-card-content {
+    position: relative;
+    z-index: 10;
+}
+
+.stat-card-blue h3 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    opacity: 0.8;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.stat-big-number {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 0.25rem;
+    line-height: 1;
+}
+
+.stat-desc {
+    font-size: 0.875rem;
+    opacity: 0.9;
+}
+
+.bg-icon {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    font-size: 8rem;
+    opacity: 0.1;
+}
+
+.stat-card-white {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    flex: 1;
+}
+
+.stat-card-white h3 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #94a3b8;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.progress-group {
+    margin-bottom: 1rem;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.progress-header span:first-child {
+    font-weight: 500;
+    color: #334155;
+}
+
+.progress-value {
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.progress-track {
+    width: 100%;
+    height: 6px;
+    background-color: #f1f5f9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #00c2ff;
+}
+
+/* ================= Queue Table ================= */
+.queue-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.queue-header h2 {
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: #0f172a;
+    margin-bottom: 0.25rem;
+}
+
+.queue-header p {
+    font-size: 0.875rem;
+    color: #64748b;
+    margin: 0;
+}
+
+.view-all-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: none;
+    color: var(--primary-color, #0b5fff);
+    font-size: 0.75rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.view-all-btn:hover {
+    text-decoration: underline;
+}
+
+.queue-table-container {
+    background-color: white;
+    border-radius: 1rem;
+    overflow-x: auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.queue-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.queue-table th {
+    padding: 1.25rem 2rem;
+    font-size: 0.65rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #64748b;
+    border-bottom: 1px solid #f8fafc;
+}
+
+.queue-table td {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #f8fafc;
+    vertical-align: middle;
+}
+
+.queue-table tr:hover {
+    background-color: #f8fafc;
+}
+
+.company-info-cell {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.company-initials {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #f1f5f9;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    color: var(--primary-color, #0b5fff);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.company-name {
+    font-size: 0.875rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0 0 0.25rem 0;
+}
+
+.company-loc {
+    font-size: 0.75rem;
+    color: #64748b;
+    margin: 0;
+}
+
+.doc-type-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: #475569;
+    font-weight: 500;
+}
+
+.doc-icon {
+    color: var(--primary-color, #0b5fff);
+    font-size: 1.25rem;
+}
+
+.date-cell {
+    font-size: 0.875rem;
+    color: #64748b;
+}
+
+.status-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+
+.status-pending {
+    background-color: #e0f8ff;
+    color: #008bb8;
+}
+
+.status-progress {
+    background-color: #eff6ff;
+    color: var(--primary-color, #0b5fff);
+}
+
+.action-btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    opacity: 0; /* بيختفوا ويظهروا لما الماوس يقف عليهم */
+    transition: opacity 0.2s;
+}
+
+.queue-table tr:hover .action-btns {
+    opacity: 1;
+}
+
+.approve-btn, .reject-btn {
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.approve-btn {
+    color: #00c2ff;
+}
+.approve-btn:hover {
+    background-color: #f0f9ff;
+}
+
+.reject-btn {
+    color: #ef4444;
+}
+.reject-btn:hover {
+    background-color: #fef2f2;
+}

@@ -1,0 +1,61 @@
+.custom-footer {
+    background-color: var(--bg-light); 
+    border-top-color: var(--border-light) !important;
+}
+
+.footer-brand {
+    font-weight: 900;
+    font-size: 1.125rem;
+    color: var(--text-dark);
+}
+
+.footer-desc {
+    font-size: 0.625rem;
+    color: #64748b;
+    letter-spacing: 0.1em;
+    line-height: 1.8;
+}
+
+.footer-heading {
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: var(--text-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+}
+
+.footer-list li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-list a {
+    color: #94a3b8;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-list a:hover {
+    color: var(--text-muted);
+}
+.footer-socials {
+    justify-content: center;
+}
+.footer-socials a {
+    color: var(--text-light);
+    transition: color 0.3s ease;
+    font-size: 1.3rem;
+}
+
+.footer-socials a:hover {
+    color: var(--secondary-color); 
+}
+
+.footer-bottom p {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    letter-spacing: 0.1em;
+}

@@ -1,0 +1,124 @@
+.custom-navbar {
+    background-color: rgba(240, 242, 254, 0.552) !important; 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 1rem 0;
+}
+
+.brand-logo {
+    color: var(--primary-color, #0b5fff) !important; 
+    font-weight: 800; 
+    letter-spacing: -0.9px;
+    font-size: 1.6rem !important;
+    cursor: pointer;
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--surface-container-low, #f8f9fa);
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+    border: 1px solid var(--border-light, #e2e8f0);
+}
+
+.dash-search-input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 0.85rem;
+    color: var(--text-dark, #0f172a);
+    width: 250px;
+}
+
+.dash-search-input::placeholder {
+    color: var(--text-muted, #94a3b8);
+}
+
+.search-icon {
+    font-size: 1.2rem;
+    color: var(--text-muted, #94a3b8);
+}
+
+
+.notification-btn {
+    background: none;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    color: var(--text-muted, #94a3b8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+    padding: 0.5rem;
+}
+
+.notification-btn:hover {
+    color: var(--primary-color, #0b5fff);
+}
+
+.notification-badge {
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: #ef4444; 
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+
+.lang-toggle {
+    background-color: white; 
+    color: #334155;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid var(--border-light, #e2e8f0);
+}
+
+.lang-toggle:hover {
+    background-color: var(--border-light, #e2e8f0);
+}
+
+.lang-toggle .icon {
+    display: flex;
+    align-items: center;
+}
+
+.lang-text {
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+}
+
+
+.profile-card-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--surface-container-low, #f8f9fa);
+    border-radius: 50px; 
+}
+
+.profile-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--text-dark, #0f172a);
+}
+
+.notification-btn.active-bell,
+.notification-btn.active-bell svg {
+    color: var(--primary-color, #0b5fff) !important;
+}

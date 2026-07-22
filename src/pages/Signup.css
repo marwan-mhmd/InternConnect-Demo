@@ -1,0 +1,51 @@
+
+.user-type-selector {
+    background-color: #eef4ff; 
+    border-radius: 0.75rem;
+    padding: 0.25rem; 
+}
+.user-type-selector .btn {
+    font-size: 0.875rem;
+    padding: 0.6rem 1rem;
+    border: none;
+    transition: all 0.3s ease-in-out; 
+    color: #64748b; 
+}
+.user-type-selector .btn.bg-white {
+    background-color: var(--bg-main) !important;
+    color: var(--primary-color)!important; 
+    /* Khalena el shadow kbeer w we waade7 aktr */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18) !important;
+    border-radius: 0.5rem;
+    transform: scale(1.02); /* Btkabar el button sena sghyra lma tekhtaro */
+}
+.input-icon {
+    position: absolute;
+    right: 1rem; 
+    top: 50%;
+    transform: translateY(-50%); 
+    color: var(--text-light); 
+    font-size: 1.1rem;
+    pointer-events: none; 
+    transition: color 0.3s ease;
+}
+.form-control:focus + .input-icon {
+    color: var(--primary-color); 
+}
+.security-note {
+    background-color: rgba(255, 255, 255, 0.6) !important; 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); 
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    margin-top: 1.5rem;
+    max-width: fit-content; 
+}
+
+.error-text {
+    color: #dc3545;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+    display: block;
+    font-weight: 500;
+}

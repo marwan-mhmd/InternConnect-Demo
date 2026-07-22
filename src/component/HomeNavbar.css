@@ -1,0 +1,58 @@
+
+.custom-navbar {
+    background-color: rgba(240, 242, 254, 0.552) !important; 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 1rem 0;
+}
+
+.brand-logo {
+    color: var(--primary-color) !important; 
+    font-weight: 800; 
+    letter-spacing: -0.9px;
+    font-size: 1.6rem !important;
+    cursor: pointer;
+}
+
+.nav-link-custom {
+    color: var(--text-muted) !important; 
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    transition: color 0.3s ease;
+}
+.lang-text{
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+}
+.nav-link-custom:hover {
+    color: var(--text-dark) !important;
+}
+.active-link {
+    color: var(--primary-color) !important; 
+    border-bottom: 2px solid var(--primary-color) !important; 
+    padding-bottom: 0.2rem !important; 
+}
+.lang-toggle .icon{
+    align-items: center;
+}
+.lang-toggle {
+    background-color: white; 
+    color: #334155;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lang-toggle:hover {
+    background-color: var(--border-light);
+}
+
+.nav-btn-text {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    transition: color 0.3s ease;
+    border: none;
+}
+
+.nav-btn-text:hover {
+    color: var(--text-dark);
+}

@@ -1,0 +1,109 @@
+.add-company-btn {
+  background-color: var(--primary-color, #0b5fff);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.add-company-btn:hover {
+  opacity: 0.9;
+}
+.companies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.admin-company-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+.company-card-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.company-avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #f1f5f9;
+  color: var(--primary-color, #0b5fff);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.company-details h3 {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.25rem;
+}
+.company-details p {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0;
+}
+.company-card-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.internship-count {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.count-number {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #0f172a;
+  line-height: 1;
+}
+.count-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #94a3b8;
+}
+.company-status {
+  padding: 0.35rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+.company-status.active {
+  background-color: #d1fae5;
+  color: #059669;
+}
+.company-status.inactive {
+  background-color: #f1f5f9;
+  color: #64748b;
+}
+.options-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+.options-btn:hover {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
